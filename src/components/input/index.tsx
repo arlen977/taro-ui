@@ -163,6 +163,7 @@ export default class AtInput extends AtComponent<AtInputProps> {
           )}
           <Input
             className='at-input__input'
+            disabled={disabled}
             id={name}
             name={name}
             type={type}

@@ -1,5 +1,5 @@
 {
-  "name": "taro-ui",
+  "name": "taro-ui-arlen",
   "version": "2.3.4",
   "description": "UI KIT for Taro",
   "main": "dist/index.js",
@@ -171,22 +171,7 @@
       ]
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --quiet --cache --fix",
-      "git add"
-    ],
-    "src/**/*.scss": [
-      "stylelint --syntax scss --fix",
-      "git add"
-    ]
-  },
+ 
   "scripts": {
     "dev:weapp": "yarn run build:weapp -- --watch",
     "dev:qq": "yarn run build:qq -- --watch",
